@@ -1,0 +1,1 @@
+Create a modern, responsive AI Challenge section for the DEVCONF 2026 website using HTML5 and CSS3 only. Match the existing dark theme and lime-green accents. Include a heading, short introduction, three challenge cards (AI for Good, Secure by Design, Future Web), and a call-to-action button. Use CSS Grid, clean spacing, and mobile-friendly styling.
