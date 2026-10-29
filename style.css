@@ -249,3 +249,186 @@ body {
 }
 
 
+/* General information sections */
+.info-section {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.alternate-section {
+    width: 100%;
+    max-width: none;
+    padding: 90px 5%;
+    background-color: #10141c;
+}
+
+.alternate-section .section-heading,
+.alternate-section .topic-grid {
+    max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 700px) {
+    .info-section,
+    .alternate-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .venue-card {
+        padding: 25px 18px;
+    }
+}
+
+
+/* Pricing Section */
+.pricing-section {
+    width: 90%;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 24px;
+}
+
+.pricing-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 25px;
+    background-color: #141821;
+    border: 1px solid #29303c;
+    border-radius: 12px;
+}
+
+.pricing-card h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.plan-description {
+    color: #aeb5c2;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.price span {
+    color: #aeb5c2;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.pricing-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.pricing-card li {
+    color: #d0d4dd;
+    font-size: 14px;
+    padding: 12px 0;
+    border-bottom: 1px solid #29303c;
+}
+
+.pricing-card li::before {
+    content: "✓";
+    color: #a3ff5f;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.pricing-btn {
+    display: block;
+    margin-top: auto;
+    padding: 13px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #454d5c;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.pricing-btn:hover {
+    border-color: #a3ff5f;
+    color: #a3ff5f;
+}
+
+/* Highlighted Pro plan */
+.pricing-card.featured {
+    border: 2px solid #a3ff5f;
+    background-color: #192019;
+    transform: translateY(-8px);
+}
+
+.popular {
+    display: inline-block;
+    align-self: flex-start;
+    padding: 6px 10px;
+    margin-bottom: 20px;
+    background-color: #a3ff5f;
+    color: #10140c;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.featured .pricing-btn {
+    color: #10140c;
+    background-color: #a3ff5f;
+    border-color: #a3ff5f;
+}
+
+.featured .pricing-btn:hover {
+    background-color: #83df42;
+}
+
+/* Responsive pricing layout */
+@media (max-width: 850px) {
+    .pricing-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pricing-card.featured {
+        transform: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .pricing-section {
+        padding: 65px 0;
+    }
+
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
