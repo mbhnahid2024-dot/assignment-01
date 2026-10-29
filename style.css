@@ -432,3 +432,135 @@ body {
     }
 }
 
+
+/* AI Challenge Section */
+.hackathon-section {
+    padding: 100px 5%;
+    background-color: #111720;
+    border-top: 1px solid #29303c;
+    border-bottom: 1px solid #29303c;
+}
+
+.hackathon-container {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+.hackathon-label {
+    display: inline-block;
+    margin-bottom: 22px;
+    color: #a3ff5f;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hackathon-container > h2 {
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin-bottom: 22px;
+}
+
+.hackathon-container > h2 span {
+    color: #a3ff5f;
+}
+
+.hackathon-intro {
+    max-width: 650px;
+    color: #aeb5c2;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 42px;
+}
+
+/* Challenge Cards */
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.challenge-card {
+    padding: 28px;
+    background-color: #171d27;
+    border: 1px solid #303847;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.challenge-card:hover {
+    transform: translateY(-5px);
+    border-color: #a3ff5f;
+}
+
+.challenge-number {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #a3ff5f;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.challenge-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.challenge-card p {
+    color: #aeb5c2;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Bottom Call-to-Action */
+.hackathon-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 35px;
+    padding: 28px;
+    background-color: #1a222d;
+    border-radius: 10px;
+}
+
+.prize-caption {
+    color: #a3ff5f;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hackathon-bottom h3 {
+    margin-top: 8px;
+    font-size: 25px;
+}
+
+.hackathon-note {
+    margin-top: 22px;
+    color: #8993a3;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+    .hackathon-section {
+        padding: 65px 5%;
+    }
+
+    .challenge-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hackathon-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hackathon-container > h2 {
+        letter-spacing: -1px;
+    }
+}
